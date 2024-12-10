@@ -320,7 +320,6 @@ header {
 
 .contact-card{
   display: flex;
-  height: 50rem;
 }
 
 .contact-card__contact-form {
@@ -446,6 +445,20 @@ header {
   background-color: #246B6D;
 }
 
+/* #endregion */
+
+/*#region FOOTER -----------------------------------------------------------*/
+
+.bottom-footer {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #C3B7A1;
+}
+
+.bottom-footer__text {
+  color: #093838;
+}
 
 /* #endregion */
 
