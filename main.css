@@ -281,47 +281,47 @@ header {
   padding: 5% 6%;
   display: flex;
   justify-content: space-between;
+}
 
-  .experience-card__text-field {
-    width: 850px;
+.experience-card__text-field {
+  width: 850px;
+}
 
-    .experience-card__text-field__subtitle {
-      color: #246B6D;
-    }
+.experience-card__text-field__subtitle {
+  color: #246B6D;
+}
 
-    .experience-card__text-field__title {
-      color: #093838;
-      margin-top: -30px;
-      margin-bottom: -15px;
-    }
+.experience-card__text-field__title {
+  color: #093838;
+  margin-top: -30px;
+  margin-bottom: -15px;
+}
 
-    .experience-card__text-field__main-text {
-      color: #093838;
-      margin-bottom: 70px;
-    }
+.experience-card__text-field__main-text {
+  color: #093838;
+  margin-bottom: 70px;
+}
 
-    .experience-card__text-field__button {
-      padding: 17px 22px;
-      font-size: 16px;
-      color: #E8E4DE;
-      background-color: #DC9108;
-      text-decoration: none;
-    }
+.experience-card__text-field__button {
+  padding: 17px 22px;
+  font-size: 16px;
+  color: #E8E4DE;
+  background-color: #DC9108;
+  text-decoration: none;
+}
 
-    .experience-card__text-field__button:hover {
-      background-color: #E8E4DE;
-      color: #DC9108;
-      font-family: "Roboto", serif;
-      font-weight: 500;
-      font-style: normal;
-    }
-  }
+.experience-card__text-field__button:hover {
+  background-color: #E8E4DE;
+  color: #DC9108;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+}
 
-  .experience-card__profile-picture {
-    background-color: aqua;
-    width: 650px;
-    height: 650px;
-  }
+.experience-card__profile-picture {
+  background-color: aqua;
+  width: 650px;
+  height: 650px;
 }
 
 /* #endregion */
@@ -330,42 +330,41 @@ header {
 
 .contact-card{
   display: flex;
+}
 
-  .contact-card__contact-form {
-    padding: 5%;
-    background-color: red;
+.contact-card__contact-form {
+  padding: 5%;
+  background-color: red;
+} 
+
+.contact-card__contact-form__title {
+  margin-top: -5%;
+}
     
-    .contact-card__contact-form__title {
-    margin-top: -5%;
-    }
-    
-    .contact-card__contact-form__formular {
-      display: flex;
-      flex-direction: column;
+.contact-card__contact-form__formular {
+  display: flex;
+  flex-direction: column;
+}
+      
+.contact-card__contact-form__formular__input {
+  margin-bottom: 20px;
+}
 
-      .contact-card__contact-form__formular__input {
-        margin-bottom: 20px;
-      }
+.contact-card__contact-form__formular__input::placeholder,
+.contact-card__contact-form__formular_textarea::placeholder {
+  color: hotpink;
+}
 
-      .contact-card__contact-form__formular__input::placeholder,
-      .contact-card__contact-form__formular_textarea::placeholder {
-        color: hotpink;
-      }
+.contact-card__contact-form__formular__textarea {
+  color: #093838;
+}
 
-      .contact-card__contact-form__formular__textarea {
-        color: #093838;
-      }
+.contact-card__contact-form__formular__button {
+  color: #093838;
+}
 
-      .contact-card__contact-form__formular__button {
-        color: #093838;
-      }
-
-    }
-  }
-
-  .contact-card__contact-media {
-    color: #093838;
-  }
+.contact-card__contact-media {
+  color: #093838;
 }
 
 /* #endregion */
