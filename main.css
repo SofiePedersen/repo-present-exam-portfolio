@@ -198,7 +198,6 @@ header {
 }
 
 .portfolio-card__title {
-  /* line-height: 50px; */
   margin-top: -4%;
   margin-bottom: 2%;
   color: #C3B7A1;
@@ -382,7 +381,6 @@ header {
 .contact-card__contact-media {
   background-color: #DED7CA;
   padding: 6%;
-  width: 100%;
 }
 
 .contact-card__contact-media__subtitle {
@@ -398,7 +396,6 @@ header {
   color: #093838;
   margin-bottom: 4.5rem;
   margin-top: 1rem;
-  width: 45rem;
 }
 
 .contact-card__contact-media__button {
@@ -463,6 +460,10 @@ header {
 /* #endregion */
 
 /* #region MEDIE QUERYS -----------------------------------------------------*/   
+
+@media screen {
+  
+}
 
 /* Tablet layout */
 @media (max-width: 1024px) {
