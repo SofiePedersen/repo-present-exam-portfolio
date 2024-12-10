@@ -1,0 +1,390 @@
+/*#region STYLING OF TEXT & FONTS ------------------------------------------*/
+
+/*.roboto-thin {
+  font-family: "Roboto", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "Rekalgera";
+  src: url(fonts/Rekalgera-Regular.otf);
+}
+
+/*@font-face er et CSS tag vi kan bruge for at skabe vores egne fonte, 
+som vi kan kalde frem i CSS koden.
+
+Ved at have vores font-fil ligge lokalt ved vi at den "altid virker",
+i stedet for at bruge en font man kun kan håbe ligger på alle folks pc'er.*/
+
+h1 {
+  font-family: "rekalgera", Arial, Helvetica, sans-serif;
+  font-size: 110px;
+  font-weight: 100;
+}
+
+h2 {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 64px;
+}
+
+h3, a {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+a {
+  font-size: 20px;
+}
+
+p {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+}
+
+/* #endregion */
+
+/*#region UNIVERSAL --------------------------------------------------------*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* #endregion */
+
+/*#region HEADER -----------------------------------------------------------*/
+
+header {
+  width: 100%;
+}
+
+.top-nav {
+  background-color: #C3B7A1;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+  
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  list-style-type: none;
+  margin-right: 20px;
+}
+  
+.nav-links__list-item,
+.nav-links__list-item--contact {
+  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-links__list-item a,
+.nav-links__list-item--contact a {
+  color: #093838;
+  text-decoration: none;
+  padding: 15px 20px;
+}
+  
+.nav-links__list-item--contact a {
+  color: #E8E4DE;
+  background-color: darkslategray; 
+}
+  
+.nav-links__list-item a:hover,
+.nav-links__list-item--contact a:hover {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+  background-color: #A59476;
+}
+  
+.nav-links__list-item--contact a:hover {
+  color:#093838;
+  background-color: #3E8C94;
+}
+
+/* #endregion */
+
+/*#region INTRO-CARD -------------------------------------------------------*/
+
+.intro-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 6%;
+  background-color: #DED7CA;
+}
+
+.intro-card__profile-picture {
+  background-color: aqua;
+  width: 650px;
+  height: 650px;
+}
+
+.intro-card__text-field {
+  width: 900px;
+}
+  
+.intro-card__text-field__sub-heading {
+  color: #3E8C94;
+  line-height: 50px;
+}
+  
+.intro-card__text-field__main-heading {
+  color: #246B6D;
+  line-height: 150px;
+}
+  
+.intro-card__text-field__third-heading {
+  color: #3E8C94;
+  margin-bottom:40px;
+}
+
+.intro-card__text-field__main-text {
+  color: #093838;
+  margin-bottom: 60px;
+}
+
+.intro-card__text-field__button {
+  padding: 17px 22px;
+  font-size: 16px;
+  color: #E8E4DE;
+  background-color: #DC9108;
+  text-decoration: none;
+}
+
+.intro-card__text-field__button:hover {
+  background-color: #E8E4DE;
+  color: #DC9108;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* #endregion */
+
+/*#region PORTFOLIO-CARD ---------------------------------------------------*/
+
+.portfolio-card {
+  background-color: #093838;
+  padding: 5% 6%;
+}
+
+.portfolio-card__title {
+  /* line-height: 50px; */
+  margin-top: -4%;
+  margin-bottom: 2%;
+  color: #C3B7A1;
+}
+
+.portfolio-card__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+    
+.portfolio-card__content__box {
+  background-color: #DED7CA;
+  width: 32%;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.portfolio-card__content__box__image {
+  background-color: purple;
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.portfolio-card__content__box__subtitle {
+  color: #093838;
+  text-decoration: none;
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.portfolio-card__content__box__subtitle:hover {
+  color: #3E8C94;
+  text-decoration: underline;
+}
+
+.portfolio-card__content__box__text {
+  margin-top: 15px;
+  margin-bottom: 40px;
+  color: #093838;
+  font-size: 16px;
+}
+
+.portfolio-card__content__box__continue {
+  color: #DC9108;
+  text-decoration: none;
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+}
+      
+.portfolio-card__content__box__continue:hover {
+  color: #E8E4DE;
+  padding: 5px 10px;
+  background-color: #DC9108;
+}
+
+/* #endregion */
+
+/*#region EXPERIENCE -------------------------------------------------------*/
+
+.experience-card {
+  background-color: #C3B7A1;
+  padding: 5% 6%;
+  display: flex;
+  justify-content: space-between;
+
+  .experience-card__text-field {
+    width: 850px;
+
+    .experience-card__text-field__subtitle {
+      color: #246B6D;
+    }
+
+    .experience-card__text-field__title {
+      color: #093838;
+      margin-top: -30px;
+      margin-bottom: -15px;
+    }
+
+    .experience-card__text-field__main-text {
+      color: #093838;
+      margin-bottom: 70px;
+    }
+
+    .experience-card__text-field__button {
+      padding: 17px 22px;
+      font-size: 16px;
+      color: #E8E4DE;
+      background-color: #DC9108;
+      text-decoration: none;
+    }
+
+    .experience-card__text-field__button:hover {
+      background-color: #E8E4DE;
+      color: #DC9108;
+      font-family: "Roboto", serif;
+      font-weight: 500;
+      font-style: normal;
+    }
+  }
+
+  .experience-card__profile-picture {
+    background-color: aqua;
+    width: 650px;
+    height: 650px;
+  }
+}
+
+/* #endregion */
+
+/*#region CONTACT-ME -------------------------------------------------------*/
+
+.contact-card{
+  display: flex;
+
+  .contact-card__contact-form {
+    padding: 5%;
+    background-color: red;
+    
+    .contact-card__contact-form__title {
+    margin-top: -5%;
+    }
+    
+    .contact-card__contact-form__formular {
+      display: flex;
+      flex-direction: column;
+
+      .contact-card__contact-form__formular__input {
+        margin-bottom: 20px;
+      }
+
+      .contact-card__contact-form__formular__input::placeholder,
+      .contact-card__contact-form__formular_textarea::placeholder {
+        color: hotpink;
+      }
+
+      .contact-card__contact-form__formular__textarea {
+        color: #093838;
+      }
+
+      .contact-card__contact-form__formular__button {
+        color: #093838;
+      }
+
+    }
+  }
+
+  .contact-card__contact-media {
+    color: #093838;
+  }
+}
+
+/* #endregion */
+
+/* #region MEDIE QUERYS -----------------------------------------------------*/   
+
+/* Tablet layout */
+@media (max-width: 1024px) {
+  
+}
+
+/* Mobil layout */
+@media (max-width: 768px) { 
+  
+}
+
+/* Klemt i bund */
+@media (max-width: 480px) {
+  
+}
+
+/* #endregion */
