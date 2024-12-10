@@ -1,35 +1,5 @@
 /*#region STYLING OF TEXT & FONTS ------------------------------------------*/
 
-/*.roboto-thin {
-  font-family: "Roboto", serif;
-  font-weight: 100;
-  font-style: normal;
-}
-
-.roboto-light {
-  font-family: "Roboto", serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.roboto-regular {
-  font-family: "Roboto", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.roboto-medium {
-  font-family: "Roboto", serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.roboto-bold {
-  font-family: "Roboto", serif;
-  font-weight: 700;
-  font-style: normal;
-} */
-
 @font-face {
   font-family: "Rekalgera";
   src: url(fonts/Rekalgera-Regular.otf);
@@ -43,15 +13,15 @@ i stedet for at bruge en font man kun kan håbe ligger på alle folks pc'er.*/
 
 h1 {
   font-family: "rekalgera", Arial, Helvetica, sans-serif;
-  font-size: 110px;
   font-weight: 100;
+  font-size: 7rem;
 }
 
 h2 {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 100;
   font-style: normal;
-  font-size: 64px;
+  font-size: 4rem;
 }
 
 h3, a {
@@ -61,18 +31,36 @@ h3, a {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 a {
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 p {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 300;
   font-style: normal;
-  font-size: 18px;
+  font-size: 1.2rem;
+}
+
+::placeholder{
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.8rem;
+  font-style: italic;
+  letter-spacing: 0.1rem;
+  color: #093838;
+}
+
+input, textarea {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.8rem;
+  color: #093838;
 }
 
 /* #endregion */
@@ -157,6 +145,7 @@ header {
   background-color: aqua;
   width: 650px;
   height: 650px;
+  margin-right: 100px;
 }
 
 .intro-card__text-field {
@@ -218,7 +207,7 @@ header {
 .portfolio-card__content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 30px;
 }
     
@@ -322,6 +311,7 @@ header {
   background-color: aqua;
   width: 650px;
   height: 650px;
+  margin-left: 100px;
 }
 
 /* #endregion */
@@ -330,15 +320,20 @@ header {
 
 .contact-card{
   display: flex;
+  height: 50rem;
 }
 
 .contact-card__contact-form {
-  padding: 5%;
-  background-color: red;
+  padding: 6%;
+  background-color: #093838;
 } 
 
 .contact-card__contact-form__title {
-  margin-top: -5%;
+  font-size: 90px;
+  font-size: 5rem;
+  margin-top: -15%;
+  margin-bottom: 2%;
+  color: #C3B7A1;
 }
     
 .contact-card__contact-form__formular {
@@ -347,25 +342,110 @@ header {
 }
       
 .contact-card__contact-form__formular__input {
-  margin-bottom: 20px;
-}
-
-.contact-card__contact-form__formular__input::placeholder,
-.contact-card__contact-form__formular_textarea::placeholder {
-  color: hotpink;
+  margin-bottom: 2rem;
+  border: none;
+  width: 35rem;
+  padding: 15px;
+  background-color: #DED7CA;
 }
 
 .contact-card__contact-form__formular__textarea {
   color: #093838;
+  border: none;
+  height: 10rem;
+  width: 35rem;
+  padding: 15px;
+  background-color: #DED7CA;
 }
 
 .contact-card__contact-form__formular__button {
   color: #093838;
+  border: none;
+  background-color: #DC9108;
+  width: 25%;
+  padding: 15px;
+  margin-top: 40px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: #E8E4DE;
+}
+
+.contact-card__contact-form__formular__button:hover {
+  background-color: #E8E4DE;
+  color: #DC9108;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .contact-card__contact-media {
-  color: #093838;
+  background-color: #DED7CA;
+  padding: 6%;
+  width: 100%;
 }
+
+.contact-card__contact-media__subtitle {
+  color: #3E8C94;
+}
+
+.contact-card__contact-media__title {
+  color: #246B6D;
+  line-height: 150px;
+}
+
+.contact-card__contact-media__text {
+  color: #093838;
+  margin-bottom: 4.5rem;
+  margin-top: 1rem;
+  width: 45rem;
+}
+
+.contact-card__contact-media__button {
+  padding: 17px 22px;
+  font-size: 16px;
+  color: #E8E4DE;
+  background-color: #DC9108;
+  text-decoration: none;
+}
+
+.contact-card__contact-media__button:hover {
+  background-color: #E8E4DE;
+  color: #DC9108;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.contact-card__contact-media__bottom-text {
+  margin-top: 5rem;
+  color: #246B6D;
+  margin-bottom: 0.5rem;
+}
+
+.contact-card__contact-media__some {
+  display: flex;
+}
+
+.contact-card__contact-media__some__buttons {
+  display: flex;
+  color: #3E8C94;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 3rem;
+  padding: 2%;
+  margin-right: 2%;
+  width: 5rem;
+  background-color: #093838;
+  border-radius: 0.5rem;
+}
+
+.contact-card__contact-media__some__buttons:hover {
+  color: #093838;
+  background-color: #246B6D;
+}
+
 
 /* #endregion */
 
