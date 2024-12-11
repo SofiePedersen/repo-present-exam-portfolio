@@ -99,7 +99,8 @@ header {
   
 .nav-links__list-item,
 .nav-links__list-item--contact,
-.nav-links__list-item--active {
+.nav-links__list-item--active,
+.nav-links__list-item--contact--active {
   text-align: center;
   display: flex;
   justify-content: flex-end;
@@ -108,7 +109,8 @@ header {
 
 .nav-links__list-item a,
 .nav-links__list-item--contact a,
-.nav-links__list-item--active a {
+.nav-links__list-item--active a,
+.nav-links__list-item--contact--active a {
   color: #093838;
   text-decoration: none;
   padding: 15px 20px;
@@ -135,6 +137,11 @@ header {
 .nav-links__list-item--active a {
   background-color: #A59476;
   color: #E8E4DE;
+}
+
+.nav-links__list-item--contact--active a {
+  background-color: #3E8C94;
+  color: #093838;
 }
 
 /* #endregion */
@@ -322,7 +329,7 @@ header {
 
 /* #endregion */
 
-/*#region CONTACT-ME -------------------------------------------------------*/
+/*#region CONTACT-ME-INDEX -------------------------------------------------*/
 
 .contact-card{
   display: flex;
@@ -500,7 +507,108 @@ header {
 
 /* #endregion */
 
-/* #region MEDIE QUERYS -----------------------------------------------------*/   
+/*#region CONTACT-ME-SITE --------------------------------------------------*/
+
+.contact-me-card {
+  background-color: #DED7CA;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-me-card__text-field {
+  width: 100rem;
+  padding: 6%;
+}
+
+.contact-me-card__text-field__subtitle {
+  margin-bottom: -2rem;
+  color: #3E8C94;
+}
+
+.contact-me-card__text-field__title {
+  color: #246B6D;
+}
+
+.contact-me-card__text-field__main-text {
+  color: #093838;
+  margin-bottom: 3rem;
+}
+
+.contact-me-card__text-field__highlighted-text {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 3rem;
+  color:#246B6D;
+  margin-bottom: 3rem;
+}
+
+.contact-me-card_right-box {
+  background-color: #093838;
+  padding: 6%;
+}
+
+.contact-me-card__contact-form {
+  padding: 6%;
+  background-color: #093838;
+} 
+
+.contact-me-card__contact-form__title {
+  font-size: 90px;
+  font-size: 5rem;
+  margin-top: -15%;
+  margin-bottom: 2%;
+  color: #C3B7A1;
+}
+    
+.contact-me-card__contact-form__formular {
+  display: flex;
+  flex-direction: column;
+}
+      
+.contact-me-card__contact-form__formular__input {
+  margin-bottom: 2rem;
+  border: none;
+  width: 35rem;
+  padding: 15px;
+  background-color: #DED7CA;
+}
+
+.contact-me-card__contact-form__formular__textarea {
+  color: #093838;
+  border: none;
+  height: 10rem;
+  width: 35rem;
+  padding: 15px;
+  background-color: #DED7CA;
+}
+
+.contact-me-card__contact-form__formular__button {
+  color: #093838;
+  border: none;
+  background-color: #DC9108;
+  width: 25%;
+  padding: 15px;
+  margin-top: 40px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  color: #E8E4DE;
+}
+
+.contact-me-card__contact-form__formular__button:hover {
+  background-color: #E8E4DE;
+  color: #DC9108;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+/* #endregion */
+
+/* #region MEDIE QUERYS ----------------------------------------------------*/   
 
 /* Tablet layout */
 @media (max-width: 1024px) {
