@@ -98,7 +98,8 @@ header {
 }
   
 .nav-links__list-item,
-.nav-links__list-item--contact {
+.nav-links__list-item--contact,
+.nav-links__list-item--active {
   text-align: center;
   display: flex;
   justify-content: flex-end;
@@ -106,7 +107,8 @@ header {
 }
 
 .nav-links__list-item a,
-.nav-links__list-item--contact a {
+.nav-links__list-item--contact a,
+.nav-links__list-item--active a {
   color: #093838;
   text-decoration: none;
   padding: 15px 20px;
@@ -128,6 +130,11 @@ header {
 .nav-links__list-item--contact a:hover {
   color:#093838;
   background-color: #3E8C94;
+}
+
+.nav-links__list-item--active a {
+  background-color: #A59476;
+  color: #E8E4DE;
 }
 
 /* #endregion */
@@ -462,25 +469,33 @@ header {
 /*#region ABOUT-ME ---------------------------------------------------------*/
 
 .about-me-card {
-  background-color: red;
+  background-color: #DED7CA;
   display: flex;
   justify-content: space-between;
   padding: 6%;
 }
 .about-me-card__text-field {
-  background-color: green;
-  width: 900px;
+  width: 50rem;
+  margin-right: 2rem;
 }
 
-.about-me-card__text-field__subtitle {}
+.about-me-card__text-field__subtitle {
+  margin-bottom: -2rem;
+  color: #3E8C94;
+}
 
-.about-me-card__text-field-title {}
+.about-me-card__text-field__title {
+  color: #246B6D;
+}
+
+.about-me-card__text-field__main-text {
+  color: #093838;
+}
 
 .about-me-card__profile__image {
   background-color: aqua;
-  width: 650px;
-  height: 650px;
-  margin-left: 100px;
+  width: 50rem;
+  height: 50rem;
 }
 
 /* #endregion */
@@ -489,7 +504,6 @@ header {
 
 /* Tablet layout */
 @media (max-width: 1024px) {
-  
 }
 
 /* Mobil layout */
