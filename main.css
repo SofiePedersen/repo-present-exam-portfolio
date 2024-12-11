@@ -459,11 +459,33 @@ header {
 
 /* #endregion */
 
-/* #region MEDIE QUERYS -----------------------------------------------------*/   
+/*#region ABOUT-ME ---------------------------------------------------------*/
 
-@media screen {
-  
+.about-me-card {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  padding: 6%;
 }
+.about-me-card__text-field {
+  background-color: green;
+  width: 900px;
+}
+
+.about-me-card__text-field__subtitle {}
+
+.about-me-card__text-field-title {}
+
+.about-me-card__profile__image {
+  background-color: aqua;
+  width: 650px;
+  height: 650px;
+  margin-left: 100px;
+}
+
+/* #endregion */
+
+/* #region MEDIE QUERYS -----------------------------------------------------*/   
 
 /* Tablet layout */
 @media (max-width: 1024px) {
