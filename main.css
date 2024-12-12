@@ -657,6 +657,7 @@ header {
 .my-experience-card__info-panel {
 background-color: #A59476;
 padding: 6%;
+width: 50%;
 }
 
 .my-experience-card__info-panel__subtitle {
@@ -676,7 +677,39 @@ padding: 6%;
 .my-experience-card__info-panel__education-text,
 .my-experience-card__info-panel__job-text {
   line-height: 2rem;
+  color: #246B6D;
+  font-weight: 300;
+}
+
+.my-experience-card__info-panel__education-text{
+  margin-bottom: 2rem;
+}
+
+.my-experience-card__info-panel span {
   color: #093838;
+  font-weight: 600;
+}
+
+.my-experience-card__pictures {
+  background-color: #093838;
+  padding: 6%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.my-experience-card__pictures__top {
+  width: 100%;
+  height: 650px;
+  background-color: red;
+  margin-bottom: 5rem;
+}
+
+.my-experience-card__pictures__bottom {
+  width: 100%;
+  height: 650px;
+  background-color: aqua;
 }
 
 /* #endregion */
