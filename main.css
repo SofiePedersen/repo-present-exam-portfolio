@@ -646,6 +646,41 @@ header {
 
 /* #endregion */
 
+/*#region EXPERIENCE-SITE --------------------------------------------------*/
+
+.my-experience-card {
+  display: flex;
+  flex-direction: space-between;
+  flex-wrap: wrap;
+}
+
+.my-experience-card__info-panel {
+background-color: #A59476;
+padding: 6%;
+}
+
+.my-experience-card__info-panel__subtitle {
+  color: #246B6D;
+}
+
+.my-experience-card__info-panel__title {
+  color: #093838;
+  line-height: 8rem;
+  margin-bottom: 2rem;
+}
+
+.my-experience-card__info-panel__third-title {
+  color: #093838;
+}
+
+.my-experience-card__info-panel__education-text,
+.my-experience-card__info-panel__job-text {
+  line-height: 2rem;
+  color: #093838;
+}
+
+/* #endregion */
+
 /* #region MEDIE QUERYS ----------------------------------------------------*/   
 
 /* Tablet layout */
