@@ -554,7 +554,6 @@ header {
 } 
 
 .contact-me-card__contact-form__title {
-  font-size: 90px;
   font-size: 5rem;
   margin-top: -15%;
   margin-bottom: 2%;
@@ -590,7 +589,7 @@ header {
   background-color: #DC9108;
   width: 25%;
   padding: 15px;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   margin-bottom: 2rem;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -616,11 +615,13 @@ header {
 
 .contact-med-card__contact-media__some__text {
   color: #246B6D;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  
 }
 
 .contact-med-card__contact-media__some__buttons {
   display: flex;
+  flex-direction: space-between;
 }
 
 .contact-med-card__contact-media__some__buttons__links {
