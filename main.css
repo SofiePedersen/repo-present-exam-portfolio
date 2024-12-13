@@ -73,6 +73,10 @@ input, textarea {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* #endregion */
 
 /*#region HEADER -----------------------------------------------------------*/
@@ -715,6 +719,11 @@ width: 50%;
 /* #endregion */
 
 /* #region MEDIE QUERYS ----------------------------------------------------*/   
+
+#Jumphere{
+  scroll
+}
+
 
 /* Tablet layout */
 @media (max-width: 1024px) {
