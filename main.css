@@ -166,7 +166,7 @@ header {
 
   background-position: center;
   background-size: 120%;
-  background-image: url(img/index-pic.png);
+  background-image: url(img/index-pic_optimized.webp);
 }
 
 .intro-card__text-field {
@@ -336,7 +336,7 @@ header {
   height: 45rem;
   margin-left: 100px;
 
-  background-image: url(img/experience-pic.png);
+  background-image: url(img/experience-pic_optimized.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 120%;
@@ -515,7 +515,12 @@ header {
 }
 
 .about-me-card__profile__image {
-  background-color: aqua;
+  margin-top: 9%;
+  background-image: url(img/about-me-pic_optimized.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-size: 53rem;
   width: 50rem;
   height: 50rem;
 }
@@ -716,15 +721,19 @@ width: 50%;
 
 .my-experience-card__pictures__top {
   width: 100%;
-  height: 650px;
-  background-color: red;
-  margin-bottom: 5rem;
+  height: 50rem;
+  margin-bottom: 2rem;
+  background-image: url(img/exp-sign-pic_optimized.webp);
+  background-position: center;
+  background-size: 55rem;
 }
 
 .my-experience-card__pictures__bottom {
   width: 100%;
-  height: 650px;
-  background-color: aqua;
+  height: 50rem;
+  background-image: url(img/exp-tools-pic_optimized.webp);
+  background-position: center;
+  background-size: 55rem;
 }
 
 /* #endregion */
@@ -757,6 +766,10 @@ width: 50%;
   background-color: aqua;
   width: 400px;
   height: 400px;
+
+  background-position: center;
+  background-size: cover;
+  
 }
 
 .adobe-ai, .adobe-ae, .css-animationer {
