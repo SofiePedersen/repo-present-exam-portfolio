@@ -718,12 +718,53 @@ width: 50%;
 
 /* #endregion */
 
-/* #region MEDIE QUERYS ----------------------------------------------------*/   
+/*#region PORTFOLIO-SITE ---------------------------------------------------*/
 
-#Jumphere{
-  scroll
+.portfolio-wrapper {
 }
 
+.adobe-ps, .adobe-ae, .adobe-ai, .adobe-id, .css-animationer, .visuel-identitet {
+  width: 100%;
+  padding: 6%;
+}
+
+.adobe-ai__content, .adobe-ae__content, .adobe-id__content, .adobe-ps__content,
+.css-animationer__content, .visuel-identitet__content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.adobe-ae__title, .adobe-ai__title, .adobe-id__title, .adobe-ps__title,
+ .visuel-identitet__title, .css-animationer__title {
+  margin-top: -5rem;
+  color: #093838;
+}
+
+.img-placeholder {
+  background-color: aqua;
+  width: 400px;
+  height: 400px;
+}
+
+.adobe-ai, .adobe-ae, .css-animationer {
+  background-color: #DED7CA;
+}
+
+.adobe-ps, .adobe-id, .visuel-identitet {
+  background-color: #246B6D
+}
+
+.adobe-ae__text, .adobe-ai__text, .adobe-ps__text, .adobe-id__text,
+.css-animationer__text, .visuel-identitet__text {
+  margin-bottom: 4rem;
+  font-size: 20px;
+}
+
+/* #endregion */
+
+/* #region MEDIE QUERYS ----------------------------------------------------*/   
 
 /* Tablet layout */
 @media (max-width: 1024px) {
