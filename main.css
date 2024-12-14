@@ -160,10 +160,13 @@ header {
 }
 
 .intro-card__profile-picture {
-  background-color: aqua;
   width: 650px;
   height: 650px;
   margin-right: 100px;
+
+  background-position: center;
+  background-size: 120%;
+  background-image: url(img/index-pic.png);
 }
 
 .intro-card__text-field {
@@ -241,6 +244,10 @@ header {
   height: 250px;
   border-radius: 8px;
   margin-bottom: 20px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .portfolio-card__content__box__subtitle {
@@ -325,10 +332,14 @@ header {
 }
 
 .experience-card__profile-picture {
-  background-color: aqua;
-  width: 650px;
-  height: 650px;
+  width: 45rem;
+  height: 45rem;
   margin-left: 100px;
+
+  background-image: url(img/experience-pic.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 120%;
 }
 
 /* #endregion */
