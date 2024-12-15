@@ -94,19 +94,18 @@ header {
 }
 
 .top-nav__logo {
-  margin-left: 2rem;
   margin-top: 0.5rem;
 }
 
 .top-nav__logo img {
   width: 150px;
+  margin-left: 1rem;
 }
 
 .nav-links {
   display: flex;
   justify-content: flex-end;
   list-style-type: none;
-  background-color: aqua;
   width: 2000px;
 }
   
@@ -164,25 +163,25 @@ header {
 
 .intro-card {
   display: flex;
-  justify-content: space-between;
-
+  justify-content: center;
   padding: 6%;
   background-color: #DED7CA;
 }
 
 .intro-card__profile-picture {
-  width: 650px;
-  height: 650px;
-  margin-right: 100px;
+  width: 40rem;
+  height: 40rem;
+  margin-right: 2rem;
+  background-color: #DC9108;
 
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 120%;
+  background-size: 110%;
   background-image: url(img/index-pic_optimized.webp);
 }
 
 .intro-card__text-field {
-  width: 900px;
+  width: 60rem;
 }
   
 .intro-card__text-field__sub-heading {
@@ -251,7 +250,6 @@ header {
 }
 
 .portfolio-card__content__box__image {
-  background-color: purple;
   width: 100%;
   height: 250px;
   border-radius: 8px;
@@ -814,14 +812,16 @@ width: 50%;
 
 /* #region MEDIE QUERYS ----------------------------------------------------*/   
 
-/* Tablet layout */
+/* Desktops, large screens */
 @media (max-width: 1710px) {
+
+/* HEADER */
   .top-nav {
     background-color: red;
   }
 
   .top-nav__logo img {
-    width: 15%
+    width: 150px;
   }
 
   .nav-links__list-item a,
@@ -832,12 +832,172 @@ width: 50%;
     padding: 15px 20px;
   }
 
+/* INTROCARD */
 
+  .intro-card__profile-picture {
+    width: 500px;
+    height: 40rem;
+    margin-right: 2rem;
+    background-color: #DC9108;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-image: url(img/index-pic_optimized.webp);
+  }
 
+  .intro-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 6%;
+    background-color: #DED7CA;
+  }
+
+  .intro-card__text-field {
+    width: 50%;
+  }
+    
+  .intro-card__text-field__sub-heading {
+    color: #3E8C94;
+    line-height: 50px;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+    
+  .intro-card__text-field__main-heading {
+    color: #246B6D;
+    line-height: 120px;
+    font-size: 8rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* PORTFOLIO CARD */
+
+  .portfolio-card__title {
+    margin-top: -4%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #C3B7A1;
+  }
+
+  .portfolio-card__content__box {
+    background-color: #DED7CA;
+    width: 48%;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  /* Kontakt*/
+
+  .contact-card{
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+  .contact-card__contact-media {
+    background-color: #DED7CA;
+    padding: 6%;
+    width: 100%;
+  }
+
+  .contact-card__contact-form {
+    padding: 6%;
+    background-color: #093838;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-card__contact-form__title {
+    font-size: 5rem;
+    margin-bottom: 2%;
+    color: #C3B7A1;
+    margin-top: -50px;
+  }
+
+  .contact-card__contact-media__some__buttons {
+    display: flex;
+    color: #3E8C94;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 3rem;
+    padding: 2%;
+    margin-right: 2%;
+    width: 6rem;
+    background-color: #093838;
+    border-radius: 0.5rem;
+  }
+
+  .contact-card__contact-form__formular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* FOOTER */
+
+  .bottom-footer__text {
+    font-size: 1rem;
+  }
+
+  /* ABOUT ME SITE */
+
+  .about-me-card {
+    background-color: #DED7CA;
+    display: flex;
+    justify-content: space-between;
+    padding: 6%;
+  }
+  
+  .about-me-card__text-field {
+    width: 30rem;
+    margin-right: 2rem;
+  }
+
+  .about-me-card__text-field__subtitle {
+    margin-bottom: -2rem;
+    color: #3E8C94;
+  }
+
+  .about-me-card__text-field__title {
+    color: #246B6D;
+    font-size: 5rem;
+  }
+
+  .about-me-card__text-field__main-text {
+    color: #093838;
+    font-size: 1.4rem;
+  }
+
+  .about-me-card__profile__image {
+    margin-top: 9%;
+    background-image: url(img/about-me-pic_optimized.webp);
+    background-position: center;
+    background-size: 35rem;
+    background-color: red;
+    background-repeat: no-repeat;
+    width: 30rem;
+    height: 30rem;
+  }
+
+  /* PORTFOLIO SITE */
+
+  .img-placeholder {
+    width: 500px;
+    height: 500px;
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
-/* Mobil layout */
-@media (max-width: 1220px) { 
+/* Small screens, laptops */
+@media (max-width: 1226px) { 
   .top-nav {
     background-color: green;
   }
@@ -850,13 +1010,62 @@ width: 50%;
     padding: 15px 20px;
     margin-left: 1rem;
   }
+
+  /* ABOUT ME SITE*/ 
+
+  .about-me-card {
+    background-color: #DED7CA;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 6%;
+  }
+  .about-me-card__text-field {
+    width: 80%;
+    margin-right: 2rem;
+    text-align: center;
+    margin-bottom: -1rem;
+  }
+  
+  .about-me-card__text-field__subtitle {
+    margin-bottom: -2rem;
+    color: #3E8C94;
+  }
+  
+  .about-me-card__text-field__title {
+    color: #246B6D;
+  }
+  
+  .about-me-card__text-field__main-text {
+    color: #093838;
+  }
+
 }
 
-/* Klemt i bund */
+/* Mobile, iPad and Tablets Layout */
 @media  (max-width: 800px) {
+
+  /* HEADER */
   .top-nav {
-    background-color: blue !important;
+    background-color: blue;
   }
+
+  .top-nav__logo img {
+    width: 100px;
+  }
+
+  .nav-links__list-item a,
+  .nav-links__list-item--contact a,
+  .nav-links__list-item--active a,
+  .nav-links__list-item--contact--active a {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+
+
+
 }
 
 /* #endregion */
