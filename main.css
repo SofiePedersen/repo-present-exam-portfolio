@@ -172,7 +172,6 @@ header {
   width: 40rem;
   height: 40rem;
   margin-right: 2rem;
-  background-color: #DC9108;
 
   background-position: center;
   background-repeat: no-repeat;
@@ -838,7 +837,6 @@ width: 50%;
     width: 500px;
     height: 40rem;
     margin-right: 2rem;
-    background-color: #DC9108;
   
     background-position: center;
     background-repeat: no-repeat;
@@ -978,7 +976,6 @@ width: 50%;
     background-image: url(img/about-me-pic_optimized.webp);
     background-position: center;
     background-size: 35rem;
-    background-color: red;
     background-repeat: no-repeat;
     width: 30rem;
     height: 30rem;
@@ -994,10 +991,68 @@ width: 50%;
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  .my-experience-card__pictures {
+    background-color: #093838;
+    padding: 6%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .my-experience-card__pictures__top {
+    width: 100%;
+    height: 50rem;
+    margin-bottom: 2rem;
+    background-image: url(img/exp-sign-pic_optimized.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 35rem;
+  }
+  
+  .my-experience-card__pictures__bottom {
+    width: 100%;
+    height: 50rem;
+    background-image: url(img/exp-tools-pic_optimized.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 35rem;
+  }
+
+  /* CONTACT SITE */
+
+  .contact-me-card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .my-experience-card__info-panel {
+    background-color: #A59476;
+    padding: 6%;
+  }
+
+  .contact-me-card__contact-form {
+    padding: 6%;
+    background-color: #093838;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .contact-me-card__contact-form__title {
+    font-size: 5rem;
+    margin-top: -50px;
+    margin-bottom: 2%;
+    color: #C3B7A1;
+  }
 }
 
 /* Small screens, laptops */
 @media (max-width: 1226px) { 
+  
+  /* HEADER */
   .top-nav {
     background-color: green;
   }
@@ -1009,6 +1064,113 @@ width: 50%;
     font-size: 14px;
     padding: 15px 20px;
     margin-left: 1rem;
+  }
+
+  /* INTRO CARD */
+
+  .intro-card {
+    display: flex;
+    justify-content: center;
+    padding: 6%;
+    background-color: #DED7CA;
+  }
+  
+  .intro-card__profile-picture {
+    width: 40rem;
+    height: 40rem;
+    margin-left: 2rem;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-image: url(img/index-pic_optimized.webp);
+  }
+  
+  .intro-card__text-field {
+    width: 40rem;
+    text-align: center;
+  }
+    
+  .intro-card__text-field__sub-heading {
+    color: #3E8C94;
+    line-height: 50px;
+  }
+    
+  .intro-card__text-field__main-heading {
+    color: #246B6D;
+    line-height: 120px;
+    margin-bottom: 2rem;
+  }
+    
+  .intro-card__text-field__third-heading {
+    color: #3E8C94;
+    margin-bottom:40px;
+    font-size: 17px;
+    font-weight: 400;
+  }
+  
+  .intro-card__text-field__main-text {
+    color: #093838;
+    margin-bottom: 60px;
+  }
+
+  /* PORTFOLIO CARD */
+
+  .portfolio-card__title {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    line-height: 8rem;
+  }
+
+  .portfolio-card__content__box {
+    background-color: #DED7CA;
+    width: 70%;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  /* EXPERIENCE CARD */
+
+  .experience-card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .experience-card__text-field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .experience-card__profile-picture {
+    margin-left: 1rem;
+  }
+
+  /* CONTACT CARD */
+
+  .contact-card__contact-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-card__contact-media__title {
+    line-height: 7rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact-card__contact-media__subtitle {
+    margin-bottom: 1rem;
+  }
+
+  .contact-card__contact-media__text {
+    margin-bottom: 3rem;
+  }
+
+  .contact-card__contact-media__button {
+    margin-bottom: 1rem;
   }
 
   /* ABOUT ME SITE*/ 
@@ -1042,6 +1204,44 @@ width: 50%;
     color: #093838;
   }
 
+  .contact-card__contact-media__bottom-text {
+    margin-top: 1.8rem;
+  }
+
+  .contact-card__contact-media__some__buttons {
+    height: 80px;
+    padding: 1rem;
+  }
+
+  .bottom-footer__text {
+    font-size: 14px;
+    width: 45%;
+    flex-wrap: wrap;
+  }
+
+  /* PORTFOLIO SITE */
+  .portfolio-wrapper {
+    text-align: center;
+  }
+
+  .adobe-ae__title, .adobe-ai__title, .adobe-id__title, .adobe-ps__title,
+  .figma__title, .css-animationer__title {
+    margin-top: 1rem;
+    line-height: 7rem;
+    margin-bottom: 3rem;
+  }
+  
+  .adobe-ae__text, .adobe-ai__text, .adobe-ps__text, .adobe-id__text,
+  .css-animationer__text, .figma__text {
+    margin-bottom: 4rem;
+    font-size: 22px;
+  }
+
+  .adobe-ae__img-placeholder__video {
+    width: 40rem;
+  }
+
+  /* EXPERIENCE SITE */
 }
 
 /* Mobile, iPad and Tablets Layout */
