@@ -92,13 +92,22 @@ header {
   justify-content: flex-end;
   padding: 20px;
 }
-  
+
+.top-nav__logo {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.top-nav__logo img {
+  width: 15%
+}
+
 .nav-links {
   display: flex;
   justify-content: space-between;
   width: 40%;
   list-style-type: none;
-  margin-right: 20px;
+  margin-right: 1rem;
 }
   
 .nav-links__list-item,
@@ -760,13 +769,25 @@ width: 50%;
 }
 
 .img-placeholder {
-  background-color: aqua;
   width: 700px;
   height: 700px;
-
+  
   background-position: center;
   background-size: cover;
-  
+  background-repeat: no-repeat;
+  background-color: #093838;
+}
+
+.img-placeholder--css-animation {
+  width: 400px;
+  height: 400px;
+  background: url('img/missetat_figur-optimized.webp') 0 0 no-repeat;
+  animation: play 3s steps(21) infinite;
+}
+
+@keyframes play {
+  0%{background-position:0px;}
+ 100% { background-position: -8400px; }
 }
 
 .adobe-ae__img-placeholder__video {
