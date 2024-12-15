@@ -94,20 +94,20 @@ header {
 }
 
 .top-nav__logo {
-  margin-left: 1rem;
+  margin-left: 2rem;
   margin-top: 0.5rem;
 }
 
 .top-nav__logo img {
-  width: 15%
+  width: 150px;
 }
 
 .nav-links {
   display: flex;
-  justify-content: space-between;
-  width: 40%;
+  justify-content: flex-end;
   list-style-type: none;
-  margin-right: 1rem;
+  background-color: aqua;
+  width: 2000px;
 }
   
 .nav-links__list-item,
@@ -127,6 +127,7 @@ header {
   color: #093838;
   text-decoration: none;
   padding: 15px 20px;
+  margin-left: 2rem;
 }
   
 .nav-links__list-item--contact a {
@@ -164,6 +165,7 @@ header {
 .intro-card {
   display: flex;
   justify-content: space-between;
+
   padding: 6%;
   background-color: #DED7CA;
 }
@@ -174,6 +176,7 @@ header {
   margin-right: 100px;
 
   background-position: center;
+  background-repeat: no-repeat;
   background-size: 120%;
   background-image: url(img/index-pic_optimized.webp);
 }
@@ -775,7 +778,6 @@ width: 50%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #093838;
 }
 
 .img-placeholder--css-animation {
@@ -813,17 +815,48 @@ width: 50%;
 /* #region MEDIE QUERYS ----------------------------------------------------*/   
 
 /* Tablet layout */
-@media (max-width: 1024px) {
+@media (max-width: 1710px) {
+  .top-nav {
+    background-color: red;
+  }
+
+  .top-nav__logo img {
+    width: 15%
+  }
+
+  .nav-links__list-item a,
+  .nav-links__list-item--contact a,
+  .nav-links__list-item--active a,
+  .nav-links__list-item--contact--active a {
+    font-size: 17px;
+    padding: 15px 20px;
+  }
+
+
+
 }
 
 /* Mobil layout */
-@media (max-width: 768px) { 
-  
+@media (max-width: 1220px) { 
+  .top-nav {
+    background-color: green;
+  }
+
+  .nav-links__list-item a,
+  .nav-links__list-item--contact a,
+  .nav-links__list-item--active a,
+  .nav-links__list-item--contact--active a {
+    font-size: 14px;
+    padding: 15px 20px;
+    margin-left: 1rem;
+  }
 }
 
 /* Klemt i bund */
-@media (max-width: 480px) {
-  
+@media  (max-width: 800px) {
+  .top-nav {
+    background-color: blue !important;
+  }
 }
 
 /* #endregion */
