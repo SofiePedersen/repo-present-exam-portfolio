@@ -277,6 +277,7 @@ header {
   margin-bottom: 40px;
   color: #093838;
   font-size: 16px;
+  height: 5rem;
 }
 
 .portfolio-card__content__box__continue {
@@ -796,7 +797,7 @@ width: 50%;
 }
 
 .adobe-ps, .adobe-id, .css-animationer {
-  background-color: #246B6D;
+  background-color: #093838;
   color: #DED7CA;
 }
 
