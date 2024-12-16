@@ -682,7 +682,7 @@ header {
 }
 
 .my-experience-card__info-panel {
-background-color: #A59476;
+background-color: #DED7CA;
 padding: 6%;
 width: 50%;
 }
@@ -704,7 +704,7 @@ width: 50%;
 .my-experience-card__info-panel__education-text,
 .my-experience-card__info-panel__job-text {
   line-height: 2rem;
-  color: #246B6D;
+  color: #093838
   font-weight: 300;
 }
 
@@ -796,8 +796,14 @@ width: 50%;
 }
 
 .adobe-ps, .adobe-id, .css-animationer {
-  background-color: #246B6D
+  background-color: #246B6D;
+  color: #DED7CA;
 }
+
+.adobe-ps h1, .adobe-id h1, .css-animationer h1 {
+  color: #C3B7A1;
+}
+
 
 .adobe-ae__text, .adobe-ai__text, .adobe-ps__text, .adobe-id__text,
 .css-animationer__text, .figma__text {
@@ -1023,7 +1029,6 @@ width: 50%;
 }
 
 .my-experience-card__info-panel {
-  background-color: #A59476;
   padding: 6%;
 }
 
@@ -1484,6 +1489,11 @@ width: 50%;
 .experience-card__profile-picture {
   margin-top: -5rem;
   margin-bottom: -5rem;
+}
+
+.my-experience-card__info-panel__job-text, .my-experience-card__info-panel__education-text {
+  font-size: 16px;
+  line-height: 30px;
 }
 }
 
