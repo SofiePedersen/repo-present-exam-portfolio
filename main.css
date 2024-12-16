@@ -813,9 +813,6 @@ width: 50%;
 @media (max-width: 1710px) {
 
 /* HEADER */
-.top-nav {
-  background-color: red;
-}
 
 .top-nav__logo img {
   width: 150px;
@@ -1051,9 +1048,6 @@ width: 50%;
 @media (max-width: 1226px) { 
   
 /* HEADER */
-.top-nav {
-  background-color: green;
-}
 
 .nav-links__list-item a,
 .nav-links__list-item--contact a,
@@ -1466,9 +1460,6 @@ width: 50%;
 @media  (max-width: 550px) {
 
 /* INTRO CARD */
-.top-nav {
-  background-color: chartreuse;
-}
 
 .intro-card__profile-picture {
   margin-top: -150px;
