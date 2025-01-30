@@ -24,7 +24,7 @@ h2 {
   font-size: 4rem;
 }
 
-h3, a {
+h3, h4, a {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -522,6 +522,7 @@ header {
 
 .about-me-card__text-field__main-text {
   color: #093838;
+  margin-bottom: 1rem;
 }
 
 .about-me-card__profile__image {
@@ -698,19 +699,45 @@ width: 50%;
   margin-bottom: 2rem;
 }
 
+.my-experience-card__info-panel__third-title,
 .my-experience-card__info-panel__third-title {
   color: #093838;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+  font-size: 2rem;
 }
 
-.my-experience-card__info-panel__education-text,
-.my-experience-card__info-panel__job-text {
-  line-height: 2rem;
-  color: #093838
+.my-experience-card__info-panel__fourth-heading--1,
+.my-experience-card__info-panel__fourth-heading--2 {
+  font-size: 1.3rem;
+}
+
+.my-experience-card__info-panel__fourth-heading--2 {
+  margin-bottom: 0.8rem;
+}
+
+.my-experience-card__info-panel__education-list__education-text,
+.my-experience-card__info-panel__job-list__job-text{
+  list-style-type: none;
+}
+
+.my-experience-card__info-panel__education-list {
+  margin-bottom: 2rem;
+}
+
+.my-experience-card__info-panel__education-list__education-text__paragraphs,
+.my-experience-card__info-panel__job-list__job-text__paragraphs {
+  color: #093838;
+  line-height: 2.5rem;
   font-weight: 300;
 }
 
-.my-experience-card__info-panel__education-text{
-  margin-bottom: 2rem;
+
+.my-experience-card__info-panel__job-list {
+  margin-bottom: 3rem;
+}
+
+.my-experience-card__info-panel__job-list__job-text {
 }
 
 .my-experience-card__info-panel span {
@@ -890,7 +917,7 @@ width: 50%;
   border-radius: 8px;
 }
 
-/* Kontakt*/
+/* KONTAKT */
 
 .contact-card{
   display: flex;
@@ -1482,6 +1509,16 @@ width: 50%;
   width: 95%;
 }
 
+/* ABOUT ME SITE */
+.about-me-card__text-field__subtitle {
+  margin-top: 2rem;
+}
+
+.about-me-card__text-field__title {
+  font-size: 3.7rem;
+  margin-bottom: 1rem;
+}
+
 /* EXPERIENCE CARD */
 .experience-card__text-field__title {
   font-size: 5rem;
@@ -1497,7 +1534,5 @@ width: 50%;
   line-height: 30px;
 }
 }
-
-/* #endregion */
 
 /* Validated d. 15/12/2024 - Sofie */
